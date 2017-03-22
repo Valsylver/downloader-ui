@@ -6,16 +6,25 @@ import File from './components/File'
 class App extends Component {
   constructor(props) {
     super(props);
-    setTimeout(() => {
+    setInterval(() => {
       this.setState({
         "files": [
         {
-          "link": "https://1fichier.com/?xjaz3acey5",
+          "link": "http://yolo.com",
           "status":"END_OK",
           "fileName":"TWDd.714.VOSTFR.7one-Telechargement.Ws.mkv",
           "bytesTotal":100,
           "startDate":"2017-03-20T19:20:20.890Z",
-          "bytesReceived":75,
+          "bytesReceived":Math.random() * 100,
+          "endDate":"2017-03-20T19:39:03.959Z"
+        },
+        {
+          "link": "https://yolo2.com",
+          "status":"END_OK",
+          "fileName":"TWDd.714.VOSTFR.7one-Telechargement.Ws.mkv",
+          "bytesTotal":100,
+          "startDate":"2017-03-20T19:20:20.890Z",
+          "bytesReceived":Math.random() * 100,
           "endDate":"2017-03-20T19:39:03.959Z"
         }
       ]})
@@ -23,7 +32,7 @@ class App extends Component {
     this.state = {
       files: [
         {
-          "link": "https://1fichier.com/?xjaz3acey5",
+          "link": "https://yolo.com",
           "status":"END_OK",
           "fileName":"TWDd.714.VOSTFR.720p.WEB-DL.DD5.1.H264-NEWZT-WwW.Zone-Telechargement.Ws.mkv",
           "bytesTotal":100,
@@ -37,15 +46,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.files.map(f =>
-          <File
-            key={f.link}
-            fileName={f.fileName}
-            status={f.status}
-            startDate={f.startDate}
-            bytesReceived={f.bytesReceived}
-            bytesTotal={f.bytesTotal}
-          />)}
+        <div className="App-header">
+          <h2>Downloader UI</h2>
+        </div>
+        <div className="body">
+          {this.state.files.map(f =>
+            <File
+              key={f.link}
+              fileName={f.fileName}
+              status={f.status}
+              startDate={f.startDate}
+              bytesReceived={f.bytesReceived}
+              bytesTotal={f.bytesTotal}
+            />)}
+        </div>
       </div>
     );
   }
