@@ -37,7 +37,8 @@ class App extends Component {
           "fileName":"TWDd.714.VOSTFR.720p.WEB-DL.DD5.1.H264-NEWZT-WwW.Zone-Telechargement.Ws.mkv",
           "bytesTotal":100,
           "startDate":"2017-03-20T19:20:20.890Z",
-          "bytesReceived":23,"endDate":"2017-03-20T19:39:03.959Z"
+          "bytesReceived":23,
+          "endDate":"2017-03-20T19:39:03.959Z"
         }
       ]
     }

@@ -1,5 +1,5 @@
 .file-container {
-  width: 1200px;
+  width: 100%;
 }
 
 .file-container .progress-bar-container {
@@ -18,10 +18,22 @@
   transition: width 2s;
 }
 
+.file-container .start-date {
+  width: 15%;
+}
+
 .file-container .file-name {
-  width: 30%;
+  width: 15%;
+}
+
+.file-container .text {
   float: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 5px;
+}
+
+.file-container .start-date {
+  text-transform: lowercase;
 }
