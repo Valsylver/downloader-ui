@@ -6,7 +6,7 @@ import File from './components/File'
 class App extends Component {
   constructor(props) {
     super(props);
-    setInterval(() => {
+    /*setInterval(() => {
       this.setState({
         "files": [
         {
@@ -28,7 +28,7 @@ class App extends Component {
           "endDate":"2017-03-20T19:39:03.959Z"
         }
       ]})
-    }, 2000);
+    }, 2000);*/
     this.state = {
       files: [
         {

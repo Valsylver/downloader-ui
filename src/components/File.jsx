@@ -8,7 +8,10 @@ class File extends Component {
     const percentage = (this.props.bytesReceived / this.props.bytesTotal) * 100;
     return (
       <div className="file-container">
-        <div className="progress-bar" style={{width : `${percentage}%`}}></div>
+        <div className="file-name">{this.props.fileName}</div>
+        <div className="progress-bar-container">
+          <div className="progress-bar" style={{width : `${percentage}%`}}></div>
+        </div>
       </div>
     );
   }
