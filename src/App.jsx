@@ -35,9 +35,9 @@ class App extends Component {
           "link": "https://yolo.com",
           "status":"END_OK",
           "fileName":"TWDd.714.VOSTFR.720p.WEB-DL.DD5.1.H264-NEWZT-WwW.Zone-Telechargement.Ws.mkv",
-          "bytesTotal":100,
-          "startDate":"2017-03-20T19:20:20.890Z",
-          "bytesReceived":23,
+          "bytesTotal": 1073741824,
+          "startDate":"2017-03-24T09:20:20.890+01:00",
+          "bytesReceived":573741824,
           "endDate":"2017-03-20T19:39:03.959Z"
         }
       ]
